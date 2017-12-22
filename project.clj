@@ -5,7 +5,9 @@
                  [ring "1.6.3"]
                  [ring/ring-defaults "0.3.1"]
                  [compojure "1.6.0"]
-                 [hiccup "1.0.5"]]
+                 [hiccup "1.0.5"]
+                 [cljs-ajax "0.7.3"]
+                 [org.clojure/core.async "0.3.465"]]
   :plugins [[lein-ring "0.12.1"]]
   :ring {:handler my-exercise.core/handler}
   :aliases {"submit" ["run" "-m" "my-exercise.submit"]})
